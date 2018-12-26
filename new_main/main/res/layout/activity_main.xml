@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context=".MainActivity">-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Hello World!"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--</android.support.constraint.ConstraintLayout>-->
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gridLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:rowCount="8"
+    android:columnCount="4"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/print1"
+        android:gravity="end|bottom"
+        android:textColor="@color/gray2"
+        android:background="@color/black"
+        android:typeface="sans"
+        android:text=""
+        android:layout_columnSpan="4"
+        android:layout_gravity="fill"
+        android:textSize="60sp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        />
+
+    <TextView
+        android:id="@+id/print2"
+        android:gravity="end|bottom"
+        android:textColor="@color/gray2"
+        android:background="@color/black"
+        android:typeface="sans"
+        android:layout_columnSpan="4"
+        android:text="@string/default_num"
+        android:layout_gravity="fill"
+        android:textSize="60sp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        />
+
+    <Button
+        android:id="@+id/CE"
+        android:background="@drawable/select"
+        android:textColor="@color/gray2"
+        android:text="CE"
+        android:textSize="20sp"
+        android:onClick="ce_clicked"
+        />
+
+    <Button
+        android:id="@+id/C"
+        android:background="@drawable/select"
+        android:textColor="@color/gray2"
+        android:textSize="20sp"
+        android:text="C"
+        android:onClick="c_clicked"
+        />
+
+    <Button
+        android:id="@+id/back"
+        android:background="@drawable/select"
+        android:textColor="@color/gray2"
+        android:textSize="20sp"
+        android:text="D"
+        android:onClick="d_clicked"
+        />
+
+    <Button
+        android:id="@+id/divide"
+        android:background="@drawable/select"
+        android:textColor="@color/gray2"
+        android:textSize="20sp"
+        android:text="➗"
+        android:onClick="divide_clicked"
+        />
+
+    <Button
+        android:id="@+id/seven"
+        android:background="@drawable/select"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:text="7"
+        android:onClick="seven_clicked"
+        />
+    <Button
+        android:id="@+id/eight"
+        android:background="@drawable/select"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:text="8"
+        android:onClick="eight_clicked"
+        />
+    <Button
+        android:id="@+id/nine"
+        android:background="@drawable/select"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:text="9"
+        android:onClick="nine_clicked"
+        />
+
+    <Button
+        android:id="@+id/multiply"
+        android:background="@drawable/select"
+        android:textColor="@color/Khaki"
+        android:textSize="40sp"
+        android:text="×"
+        android:onClick="multiply_clicked"
+        />
+
+    <Button
+        android:id="@+id/four"
+        android:background="@drawable/select"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:text="4"
+        android:onClick="four_clicked"
+        />
+    <Button
+        android:id="@+id/five"
+        android:background="@drawable/select"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:text="5"
+        android:onClick="five_clicked"
+        />
+    <Button
+        android:id="@+id/six"
+        android:background="@drawable/select"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:text="6"
+        android:onClick="six_clicked"
+        />
+
+    <Button
+        android:id="@+id/reduce"
+        android:background="@drawable/select"
+        android:textColor="@color/MediumTurquoise"
+        android:textSize="30sp"
+        android:text="－"
+        android:onClick="reduce_clicked"
+        />
+
+    <Button
+        android:id="@+id/one"
+        android:background="@drawable/select"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:text="1"
+        android:onClick="one_clicked"
+        />
+    <Button
+        android:id="@+id/two"
+        android:background="@drawable/select"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:text="2"
+        android:onClick="two_clicked"
+        />
+    <Button
+        android:id="@+id/three"
+        android:background="@drawable/select"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:text="3"
+        android:onClick="three_clicked"
+        />
+
+    <Button
+        android:id="@+id/add"
+        android:background="@drawable/select"
+        android:textColor="@color/gray2"
+        android:textSize="20sp"
+        android:text="➕"
+        android:onClick="add_clicked"
+        />
+
+    <Button
+        android:id="@+id/zhengfu"
+        android:background="@drawable/select"
+        android:textColor="@color/gray2"
+        android:textSize="30sp"
+        android:text="±"
+        android:onClick="zhengfu_clicked"
+        />
+
+    <Button
+        android:id="@+id/zero"
+        android:background="@drawable/select"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:text="@string/default_num"
+        android:onClick="zero_clicked"
+        />
+
+    <Button
+        android:id="@+id/dot"
+        android:background="@drawable/select"
+        android:textColor="@color/gray2"
+        android:textSize="30sp"
+        android:text="·"
+        android:onClick="dot_clicked"
+        />
+
+    <Button
+        android:id="@+id/equal"
+        android:background="@drawable/select"
+        android:textColor="@color/gray2"
+        android:textSize="20sp"
+        android:text="＝"
+        android:onClick="equals_clicked"
+        />
+</GridLayout>

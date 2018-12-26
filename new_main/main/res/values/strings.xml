@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">科学计算器</string>
+    <string name="default_num">0</string>
+</resources>
